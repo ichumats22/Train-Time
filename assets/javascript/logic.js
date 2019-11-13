@@ -16,11 +16,14 @@ $(document).ready(function() {
     //Crate a variable to reference the database
     var database = firebase.database();
 
+    moment().format();
+
     //Initial values
     var trainName = '';
     var destination = '';
     var firstTrain = 0;
     var frequency = 0;
+    var now = moment()._d;
 
   //FUNCTIONS-------------------------------------------------------------------------------------------------------------------------------------
 
@@ -54,6 +57,7 @@ $(document).ready(function() {
       console.log(sv.destination);
       console.log(sv.firstTrain);
       console.log(sv.frequency);
+      console.log(now);
 
       
       // full list of items to the well
