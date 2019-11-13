@@ -13,19 +13,77 @@
   <title>Train Time</title>
 </head>
 <body>
-  <div class='container'>
-    <div class='row'> 
-      <div class='col'>
-        <form>
-          <div class="form-group">
-            <label for="test">TEST</label>
-            <input type="text" class="form-control" id="test" placeholder="test">
-          </div>
-          <button type='submit' id='testButton'> Click Me!</button>
-        </form>
-      </div>
-    </div>
-  </div>
+  <div class='container'><!--start of container-->
+    <div class='row'> <!--start of row 1-->
+      <div class='col'> <!--start of r1 col-->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4 text-center">Train Time</h1>
+          </div><!--end of jumbotron content container-->
+        </div><!--end of jumbotron-->
+      </div><!-- end of r1 col-->
+    </div><!--end of row 1-->
+
+    <div class='row'> <!--start of row 2-->
+      <div class='col'><!--start of r2 col-->
+        <div class="card">
+          <h5 class="card-header">Current Train Schedule</h5>
+          <div class="card-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Train Name</th>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Frequency (min)</th>
+                  <th scope="col">Next Arrival</th>
+                  <th scope="col">Minutes Away</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id='nameData'></td>
+                  <td id='destinationData'></td>
+                  <td id='frequencyData'></td>
+                  <td id='nextArrival'></td>
+                  <td id='minutesAway'></td>
+                </tr>
+              
+              </tbody>
+            </table>
+          </div><!--end of card body-->
+        </div><!--end of card-->
+      </div><!--end of r2 col-->
+    </div><!--end of row 2-->
+
+    <div class='row'> <!--start of row three-->
+      <div class='col'> <!--start of r3 col-->
+        <div class="card">
+          <h5 class="card-header">Add Train</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="trainName"><strong>Train Name</strong></label>
+                <input type="text" class="form-control" id="trainName" aria-describedby="trainName" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="destination"><strong>Destination</strong></label>
+                <input type="text" class="form-control" id="destination" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="firstTrain"><strong>First train (HH:mm - military time)</strong></label>
+                <input type="text" class="form-control" id="firstTrain" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="frequency"><strong>Frequency (minutes)</strong></label>
+                <input type="text" class="form-control" id="frequency" placeholder="">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div><!--end of card body-->
+        </div><!--end of card-->
+      </div><!--end of r3 col-->
+    </div><!--end of row three-->
+  </div><!--end of container-->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 
