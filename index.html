@@ -6,17 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--reset.css link-->
   <link rel='stylesheet' href='assets/css/reset.css'>
-  <!--Stylesheet link-->
-  <link rel='stylesheet' href='assets/css/style.css'>
+  <!--Google Fonts link-->
+  <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:400,500,700&display=swap" rel="stylesheet">
   <!--Bootstrap CDN link-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!--Stylesheet link-->
+  <link rel='stylesheet' href='assets/css/style.css'>
   <title>Train Time</title>
 </head>
 <body>
   <div class='container'><!--start of container-->
     <div class='row'> <!--start of row 1-->
       <div class='col'> <!--start of r1 col-->
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron">
           <div class="container">
             <h1 class="display-4 text-center">Train Time</h1>
           </div><!--end of jumbotron content container-->
@@ -27,29 +29,30 @@
     <div class='row'> <!--start of row 2-->
       <div class='col'><!--start of r2 col-->
         <div class="card">
-          <h5 class="card-header">Current Train Schedule</h5>
+          <h2 class="card-header">Current Schedule</h2>
           <div class="card-body">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Train Name</th>
-                  <th scope="col">Destination</th>
-                  <th scope="col">Frequency (min)</th>
-                  <th scope="col">Next Arrival</th>
-                  <th scope="col">Minutes Away</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr id='trainData'>
-                  <td id='nameData'></td>
-                  <td id='destinationData'></td>
-                  <td id='frequencyData'></td>
-                  <td id='nextArrival'></td>
-                  <td id='minutesAway'></td>
-                </tr>
-              
-              </tbody>
-            </table>
+            <div class='table-responsive'>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency (min)</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id='trainData'>
+                    <td id='nameData'></td>
+                    <td id='destinationData'></td>
+                    <td id='frequencyData'></td>
+                    <td id='nextArrival'></td>
+                    <td id='minutesAway'></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> <!--of of responsive table div-->
           </div><!--end of card body-->
         </div><!--end of card-->
       </div><!--end of r2 col-->
@@ -58,26 +61,26 @@
     <div class='row'> <!--start of row three-->
       <div class='col'> <!--start of r3 col-->
         <div class="card">
-          <h5 class="card-header">Add Train</h5>
+          <h2 class="card-header">Add Train</h2>
           <div class="card-body">
             <form>
               <div class="form-group">
-                <label for="trainName"><strong>Train Name</strong></label>
+                <label for="trainName">Train Name</label>
                 <input type="text" class="form-control" id="trainName" aria-describedby="trainName" placeholder="">
               </div>
               <div class="form-group">
-                <label for="destination"><strong>Destination</strong></label>
+                <label for="destination">Destination</label>
                 <input type="text" class="form-control" id="destination" placeholder="">
               </div>
               <div class="form-group">
-                <label for="firstTrain"><strong>First train (HH:mm - military time)</strong></label>
+                <label for="firstTrain">First train (HH:mm - military time)</label>
                 <input type="text" class="form-control" id="firstTrain" placeholder="">
               </div>
               <div class="form-group">
-                <label for="frequency"><strong>Frequency (minutes)</strong></label>
+                <label for="frequency">Frequency (minutes)</label>
                 <input type="text" class="form-control" id="frequency" placeholder="">
               </div>
-              <button type="submit" class="btn btn-primary" id='submitButton'>Submit</button>
+              <button type="submit" class="btn btn-dark" id='submitButton'>Submit</button>
               </form>
           </div><!--end of card body-->
         </div><!--end of card-->

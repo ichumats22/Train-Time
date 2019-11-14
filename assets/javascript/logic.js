@@ -83,6 +83,6 @@ $(document).ready(function() {
   
       // full list of items to the table
       $('tbody').append(" <tr id='trainData'> <td id='nameData'> " +
-        sv.trainName + " </td><td id='destinationData'> " + sv.destination + " </td><td id='frequencyData'> " + sv.frequency + " </td><td id='nextArrival'> " + moment(nextArrival).format('HH:mm') + " </td><td id='minutesAway'> " + minutesAway + " </td></tr> ");
+        sv.trainName + " </td><td id='destinationData'> " + sv.destination + " </td><td id='frequencyData'> " + sv.frequency + " </td><td id='nextArrival'> " + moment(nextArrival).format('hh:mm A') + " </td><td id='minutesAway'> " + minutesAway + " </td></tr> ");
     });
 });

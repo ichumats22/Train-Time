@@ -4,9 +4,45 @@
 }
 
 body {
-  
+  background: url(../pictures/Picture5.jpg);
+  background-size:cover;
 }
 
 .card {
-  margin: 10px;
+  margin: 10px 0 10px 0;
+  opacity: 90%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.jumbotron {
+  margin-top: 20px;
+  opacity: 90%;
+  background-color: #ffffff;
+}
+
+h1, h2 {
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  font-weight: 500;
+  font-stretch: extra-expanded;
+}
+
+h1 {
+  font-size: 700;
+}
+
+.table {
+  text-align: center;
+}
+
+thead, label {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#submitButton {
+  float: right;
+  font-family: 'Bebas Neue', cursive ;
+  font-size: 24px;
 }
